@@ -10,8 +10,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/styles.css">
     
-
-
 </head>
 
 <body>
@@ -61,30 +59,30 @@
                   <div class="pb-28">
                     <h1 class="mb-5 text-white text-5xl font-extrabold leading-relaxed">End-to-End Travel with <br> <span class="text-[#1DD100]">ROYAL Paribahan</span></h1>
                     <p class="mb-5 py-5 text-[#FFF] font-normal text-lg">This is the banner section of my fifth assignment in programming hero course of the ningth <br> Though I am sick but still i am trying to finish my assignment.</p>
-                    <button class="btn btn-primary bg-[#1DD100] text-black border-none">Buy Tickets</button>
+                    <button id="scrollButton" class="btn btn-primary bg-[#1DD100] text-black border-none">Buy Tickets</button>
                   </div>
                 </div>
               </div>
         </section>
         <section class=" flex justify-center items-center gap-4 lg:gap-10 relative bottom-20">
-            <div class="w-72 h-32 bg-white rounded-xl flex items-center justify-center gap-4 border-b-[#1DD100] border-b-2">
+            <div class="lg:w-72 lg:h-32 bg-white rounded-xl flex items-center justify-center gap-4 border-b-[#1DD100] border-b-2">
                 <div><img src="images/people.png" alt=""></div>
                 <div>
-                    <h4 class="font-bold text-black text-4xl">500K+</h4>
+                    <h4 class="lg:font-bold text-black lg:text-4xl">500K+</h4>
                     <p>Registered users</p>
                 </div>
             </div>
-            <div class="w-72 h-32 bg-white rounded-xl flex items-center justify-center gap-4 border-b-[#1DD100] border-b-2">
+            <div class="lg:w-72 lg:h-32 bg-white rounded-xl flex items-center justify-center gap-4 border-b-[#1DD100] border-b-2">
                 <div><img src="images/ticket-cupon.png" alt=""></div>
                 <div>
-                    <h4 class="font-bold text-black text-4xl">1.7 lacks</h4>
+                    <h4 class="lg:font-bold text-black lg:text-4xl">1.7 lacks</h4>
                     <p>Tickets sold</p>
                 </div>
             </div>
-            <div class="w-72 h-32 bg-white rounded-xl flex items-center justify-center gap-4 border-b-[#1DD100] border-b-2">
+            <div class="lg:w-72 lg:h-32 bg-white rounded-xl flex items-center justify-center gap-4 border-b-[#1DD100] border-b-2">
                 <div><img src="images/stoppage.png" alt=""></div>
                 <div>
-                    <h4 class="font-bold text-black text-4xl">80K+</h4>
+                    <h4 class="lg:font-bold text-black lg:text-4xl">80K+</h4>
                     <p>Rental partners</p>
                 </div>
             </div>
@@ -134,13 +132,13 @@
     </section>
 
     <!-- ticketing section -->
-    <section class="bg-[#F7F8F8] rounded-t-3xl border-t-[#1DD100] border-t-2 w-auto mt-20">
+    <section id="ticketingSection" class="bg-[#F7F8F8] rounded-t-3xl border-t-[#1DD100] border-t-2 w-auto mt-20">
         <div class="text-center pt-20">
             <h2 class="font-bold text-4xl text-[#030712]">ROYAL Paribahan</h2>
             <p class="font-normal text-lg text-[#03071299] py-5">The ultimate section of this assignment is starts and it will be hardest part of <br> this assignment but I will try my best to finish it.</p>
         </div>
         <section class="bg-white lg:max-w-6xl h-auto lg:mx-24 rounded-xl pb-5">
-            <div class="flex justify-between items-center">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
                 <div class=" pt-4 px-5 w-3/4">
                     <div class="flex justify-between items-center">
                         <div class="flex justify-center items-center gap-4">
@@ -150,9 +148,9 @@
                                 <p>Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
-                        <div class="flex gap-3">
+                        <div class="flex gap-2">
                             <img src="images/seat-green.png" alt="">
-                            <p>40 Seats left</p>
+                            <p id="seats-left">40 Seats left</p>
                         </div>
                     </div>
                     
@@ -174,19 +172,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="pr-5 lg:pr-24">
+                <div class="pr-5 lg:pr-24 py-10">
                     <img src="images/fare.png" alt="">
                     <h3 class="font-bold text-3xl text-[#030712]">550 Taka</h3>
                     <p class="font-semibold text-2xl text-[#030712]">Per seat</p>
                 </div>
             </div>
         </section>
-        <section class="bg-white lg:max-w-6xl h-auto lg:mx-24 rounded-xl my-10">
-            <!-- bus seat section -->
-            <section class="px-8 py-8 w-3/5">
+        <!-- seat and ticket related section-->
+        <section class="bg-white lg:max-w-6xl h-auto lg:mx-24 rounded-xl my-10 flex flex-col lg:flex-row justify-between">
+            <!-- bus seat arrangement section -->
+            <section class="px-8 py-8 lg:w-3/5">
                 <h3 class="font-semibold text-2xl text-[#030712] py-5">Select Your Seat</h3>
                 <hr>
-                <div class="flex py-5 justify-between items-center">
+                <div class="flex py-5 lg:gap-[70vh] gap-[90vh] lg:justify-between items-center">
                     <div class="flex">
                         <img src="images/seat-gray.png" alt="">
                         <p>Available</p>
@@ -197,9 +196,152 @@
                     </div>
                 </div>
                 <hr>
+                <div class="w-24 h-12 bg-[#0307121A] flex items-center justify-center rounded-lg ml-[115vh] lg:ml-[88vh] mt-4">
+                    <img src="images/tabler-icon-steering-wheel.png" alt="">
+                </div>
+                <section class="py-10">
+                    <div class="flex justify-center items-center gap-10 lg:gap-28 py-3">
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <p>A</p>
+                            <button class="btn w-24 h-12 seat seat-button">A1</button>
+                            <button class="btn w-24 h-12 seat seat-button">A2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <button class="btn w-24 h-12 seat seat-button">A3</button>
+                            <button class="btn w-24 h-12 seat seat-button">A4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-10 lg:gap-28 py-3">
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <p>B</p>
+                            <button class="btn w-24 h-12 seat seat-button">B1</button>
+                            <button class="btn w-24 h-12 seat seat-button">B2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <button class="btn w-24 h-12 seat seat-button">B3</button>
+                            <button class="btn w-24 h-12 seat seat-button">B4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-10 lg:gap-28 py-3">
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <p>C</p>
+                            <button class="btn w-24 h-12 seat seat-button">C1</button>
+                            <button class="btn w-24 h-12 seat seat-button">C2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <button class="btn w-24 h-12 seat seat-button">C3</button>
+                            <button class="btn w-24 h-12 seat seat-button">C4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-10 lg:gap-28 py-3">
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <p>D</p>
+                            <button class="btn w-24 h-12 seat seat-button">D1</button>
+                            <button class="btn w-24 h-12 seat seat-button">D2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <button class="btn w-24 h-12 seat seat-button">D3</button>
+                            <button class="btn w-24 h-12 seat seat-button">D4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-10 lg:gap-28 py-3">
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <p>E</p>
+                            <button class="btn w-24 h-12 seat seat-button">E1</button>
+                            <button class="btn w-24 h-12 seat seat-button">E2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <button class="btn w-24 h-12 seat seat-button">E3</button>
+                            <button class="btn w-24 h-12 seat seat-button">E4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-10 lg:gap-28 py-3">
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <p>F</p>
+                            <button class="btn w-24 h-12 seat seat-button">F1</button>
+                            <button class="btn w-24 h-12 seat seat-button">F2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <button class="btn w-24 h-12 seat seat-button">F3</button>
+                            <button class="btn w-24 h-12 seat seat-button">F4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-10 lg:gap-28 py-3">
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <p>G</p>
+                            <button class="btn w-24 h-12 seat seat-button">G1</button>
+                            <button class="btn w-24 h-12 seat seat-button">G2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <button class="btn w-24 h-12 seat seat-button">G3</button>
+                            <button class="btn w-24 h-12 seat seat-button">G4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-10 lg:gap-28 py-3">
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <p>H</p>
+                            <button class="btn w-24 h-12 seat seat-button">H1</button>
+                            <button class="btn w-24 h-12 seat seat-button">H2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <button class="btn w-24 h-12 seat seat-button">H3</button>
+                            <button class="btn w-24 h-12 seat seat-button">H4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-10 lg:gap-28 py-3">
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <p>I</p>
+                            <button class="btn w-24 h-12 seat seat-button">I1</button>
+                            <button class="btn w-24 h-12 seat seat-button">I2</button>
+                        </div>
+                        <div class="flex justify-between items-center gap-5 lg:gap-10">
+                            <button class="btn w-24 h-12 seat seat-button">I3</button>
+                            <button class="btn w-24 h-12 seat seat-button">I4</button>
+                        </div>
+                    </div>
+                </section>
 
             </section>
-
+            <!-- bus fare price section -->
+            <section class="px-8 py-8">
+                <h3 class="font-semibold text-2xl text-[#030712] py-5 pr-52">Select Your Seat</h3>
+                <hr>
+                <div class="bg-[#F7F8F8] rounded-xl px-5 py-3 mt-5">
+                    <div class="flex justify-between py-5">
+                        <p id="seat-count" class="text-[#030712] text-lg font-medium">Seat 0</p>
+                        <p class="text-[#030712] text-lg font-medium">Class</p>
+                        <p class="text-[#030712] text-lg font-medium">Price</p>
+                    </div>
+                    <hr>
+                    <div id="selected-seats" class="text-2xl text-black flex justify-between flex-col"></div>
+                    <hr>
+                    <div class="flex justify-between py-2">
+                        <p class="text-[#030712] text-lg font-medium">Total Price</p>
+                        <p id="total-price" class="text-[#030712] text-lg font-medium">BDT <span id="total-price-value">0</span></p>
+                    </div>
+                    <div class="flex justify-center items-center static">
+                        <input id="coupon-input" type="text" placeholder="Have any coupon?" class="input input-bordered h-14 w-full lg:max-w-96" />
+                        <button id="apply-coupon-btn" class="btn w-24 h-6 bg-[#1DD100] absolute right-16 lg:right-40">Apply</button>
+                    </div>
+                </div>
+                <div class="py-3">
+                    <h4 class="pb-2 text-[#030712] text-lg font-semibold">Passenger Name*</h4>
+                    <input type="text" placeholder="Enter your name" class="input input-bordered  w-full lg:max-w-[100vh]" />
+                </div>
+                <div class="py-3">
+                    <h4 class="pb-2 text-[#030712] text-lg font-semibold">Phone Number*</h4>
+                    <input type="text" placeholder="Enter your phone number" class="input input-bordered  w-full lg:max-w-[100vh]" />
+                </div>
+                <div class="py-3">
+                    <h4 class="pb-2 text-[#030712] text-lg font-semibold">Email ID</h4>
+                    <input type="text" placeholder="Enter your email id" class="input input-bordered  w-full lg:max-w-[100vh]" />
+                </div>
+                <button class="btn bg-[#1DD100] w-full lg:max-w-[100vh] mt-5">Next</button>
+                <div class="flex justify-between py-5">
+                    <p class="text-lg font-semibold underline">Terms and Conditions</p>
+                    <p class="text-lg font-semibold underline">Cancellation Policy</p>
+                </div>
+            </section>
         </section>
 
     </section>
@@ -228,7 +370,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
