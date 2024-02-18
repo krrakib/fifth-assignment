@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticketing</title>
+    <!-- Daisy and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+
+
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="py-10">
+        <div class="navbar bg-base-100 flex justify-around">
+            <div class="">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu text-base menu-sm px-4 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <h2 class="btn font-extrabold btn-ghost text-4xl">E-Ticketing</h2>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu text-base menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div>
+                <a class="btn btn-outline border-[#1DD10066] bg-[#1DD1001A] text-[#1DD100]">Bus <span><img src="images/bus-icon.png"
+                            alt=""></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner section -->
+    <section>
+        <section class="lg:max-w-6xl mx-5 rounded-xl lg:mx-auto py-5">
+            <div class="hero lg:h-[90vh] rounded-xl" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-10"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="pb-28">
+                    <h1 class="mb-5 text-white text-5xl font-extrabold leading-relaxed">End-to-End Travel with <br> <span class="text-[#1DD100]">ROYAL Paribahan</span></h1>
+                    <p class="mb-5 py-5 text-[#FFF] font-normal text-lg">This is the banner section of my fifth assignment in programming hero course of the ningth <br> Though I am sick but still i am trying to finish my assignment.</p>
+                    <button class="btn btn-primary bg-[#1DD100] text-black border-none">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class=" flex justify-center items-center gap-4 lg:gap-10 relative bottom-20">
+            <div class="w-72 h-32 bg-white rounded-xl flex items-center justify-center gap-4 border-b-[#1DD100] border-b-2">
+                <div><img src="images/people.png" alt=""></div>
+                <div>
+                    <h4 class="font-bold text-black text-4xl">500K+</h4>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            <div class="w-72 h-32 bg-white rounded-xl flex items-center justify-center gap-4 border-b-[#1DD100] border-b-2">
+                <div><img src="images/ticket-cupon.png" alt=""></div>
+                <div>
+                    <h4 class="font-bold text-black text-4xl">1.7 lacks</h4>
+                    <p>Tickets sold</p>
+                </div>
+            </div>
+            <div class="w-72 h-32 bg-white rounded-xl flex items-center justify-center gap-4 border-b-[#1DD100] border-b-2">
+                <div><img src="images/stoppage.png" alt=""></div>
+                <div>
+                    <h4 class="font-bold text-black text-4xl">80K+</h4>
+                    <p>Rental partners</p>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+</body>
+
+</html>
