@@ -150,7 +150,7 @@
                         </div>
                         <div class="flex gap-2">
                             <img src="images/seat-green.png" alt="">
-                            <p id="seats-left">40 Seats left</p>
+                            <p id="seats-left">36 Seats left</p>
                         </div>
                     </div>
                     
@@ -336,13 +336,23 @@
                     <h4 class="pb-2 text-[#030712] text-lg font-semibold">Email ID</h4>
                     <input type="text" placeholder="Enter your email id" class="input input-bordered  w-full lg:max-w-[100vh]" />
                 </div>
-                <button id="open-modal-btn" class="btn bg-[#1DD100] w-full lg:max-w-[100vh] mt-5">Next</button>
+                <button  class="btn bg-[#1DD100] w-full lg:max-w-[100vh] mt-5" onclick="showModal()">Next</button>
                 <div class="flex justify-between py-5">
                     <p class="text-lg font-semibold underline">Terms and Conditions</p>
                     <p class="text-lg font-semibold underline">Cancellation Policy</p>
                 </div>
             </section>
         </section>
+    </section>
+    <section id="showpopup" class="w-3/4 h-[100vh] mx-auto bg-[#F2F1F1] flex justify-center items-center rounded-2xl absolute transform top-[350vh] left-36 hidden ">
+        <div  class=" bg-white w-1/2 h-1/2 flex justify-center items-center flex-col gap-2 rounded-lg ">
+            <img class="h-20 w-20" src="images/success.png" alt="">
+            <h2 class="text-[#27AE60] text-2xl font-bold">SUCCESS</h2>
+            <p class="text-black text-lg font-normal text-center">Thank you for Booking Our Bus Seats. 
+                <br>We are working hard to find the best service and deals for you.</p>
+                <p>Shortly you will find a confirmation in your email.</p>
+                <button class="px-16 py-3 bg-[#27AE60] rounded-3xl" onclick="hideModal()">Continue</button>
+        </div>
     </section>
     <!-- footer section -->
     <footer class="bg-[#030712] mt-20 pt-28">

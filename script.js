@@ -9,42 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-
-// seat selection releted js code
-// document.addEventListener('DOMContentLoaded', function () {
-//     let seatsLeft = 36;
-//     let selectedSeats = 0;
-
-//     let seatButtons = document.querySelectorAll('.seat-button');
-//     let seatsLeftDisplay = document.getElementById('seats-left');
-//     let seatCountDisplay = document.getElementById('seat-count');
-
-//     seatButtons.forEach(function (seatButton) {
-//         seatButton.addEventListener('click', function () {
-//             if (!seatButton.classList.contains('selected')) {
-//                 if (selectedSeats < 4) {
-//                     seatButton.classList.add('selected');
-//                     seatsLeft--;
-//                     selectedSeats++;
-//                     updateSeatDisplay();
-//                 } else {
-//                     alert('You can only select up to 4 seats.');
-//                 }
-//             } else {
-//                 seatButton.classList.remove('selected');
-//                 seatsLeft++;
-//                 selectedSeats--;
-//                 updateSeatDisplay();
-//             }
-//         });
-//     });
-
-//     function updateSeatDisplay() {
-//         seatsLeftDisplay.textContent = seatsLeft + ' seats left';
-//         seatCountDisplay.textContent = 'Seat ' + selectedSeats;
-//     }
-// });
-
+// seat selection and price update related js code
 document.addEventListener('DOMContentLoaded', function() {
     let seatsLeft = 36;
     let selectedSeats = [];
@@ -126,4 +91,19 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+//   modal related js
+  function showModal() {
+    let showpopup = document.getElementById('showpopup');
+    showpopup.className = showpopup.className.replace('hidden', '');
+  }
+
+  function hideModal() {
+    let popupSection = document.getElementById('showpopup');
+    popupSection.classList.add('hidden');
+  }
+  
+ 
+
+
 
